@@ -1,0 +1,154 @@
+.bmi-container {
+  padding: 2rem;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f6f8fc 0%, #e9eef6 100%);
+}
+
+.bmi-card {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.bmi-card h2 {
+  color: #1a365d;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.bmi-form {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #2d3748;
+}
+
+.form-group input {
+  padding: 0.75rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #4299e1;
+}
+
+.calculate-btn {
+  background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.calculate-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(66, 153, 225, 0.3);
+}
+
+.result-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e2e8f0;
+}
+
+.result-section h3 {
+  color: #2d3748;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.bmi-result {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.bmi-result p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #4a5568;
+}
+
+.bmi-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2b6cb0;
+}
+
+.bmi-category {
+  font-weight: 600;
+  color: #2b6cb0;
+}
+
+.bmi-scale {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  background: #f7fafc;
+  border-radius: 8px;
+}
+
+.scale-item {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.scale-item.underweight {
+  background: #ebf8ff;
+  color: #2b6cb0;
+}
+
+.scale-item.normal {
+  background: #f0fff4;
+  color: #2f855a;
+}
+
+.scale-item.overweight {
+  background: #fffaf0;
+  color: #c05621;
+}
+
+.scale-item.obese {
+  background: #fff5f5;
+  color: #c53030;
+}
+
+@media (max-width: 768px) {
+  .bmi-container {
+    padding: 1rem;
+  }
+
+  .bmi-card {
+    padding: 1.5rem;
+  }
+
+  .bmi-scale {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} 

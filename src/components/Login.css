@@ -1,0 +1,174 @@
+/* Login Page Container */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Login Card */
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+/* Login Header */
+.login-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login-header h1 {
+  font-size: 2rem;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.login-header p {
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+/* Login Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Form Group */
+.form-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #f7fafc;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e2e8f0;
+  transition: border-color 0.3s ease;
+}
+
+.form-group:focus-within {
+  border-color: #667eea;
+}
+
+.input-icon {
+  color: #a0aec0;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.form-group input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #2d3748;
+  outline: none;
+}
+
+.form-group input::placeholder {
+  color: #a0aec0;
+}
+
+/* Login Button */
+.login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background: #5a67d8;
+}
+
+.login-button:disabled {
+  background: #a0aec0;
+  cursor: not-allowed;
+}
+
+.button-icon {
+  font-size: 1rem;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #ffffff;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error Message */
+.error-message {
+  padding: 0.75rem;
+  background: #fed7d7;
+  color: #c53030;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Toggle Form */
+.toggle-form {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: #667eea;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.toggle-button:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 1rem;
+  }
+
+  .login-card {
+    padding: 1.5rem;
+  }
+
+  .login-header h1 {
+    font-size: 1.75rem;
+  }
+} 
