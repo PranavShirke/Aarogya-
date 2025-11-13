@@ -125,7 +125,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("chat-form");
   const input = document.getElementById("chat-input");
 
-  const GEMINI_API_KEY = "AIzaSyDf4YlqrXzmy28UGVxdotvC6VMHAWCmA0w"; // <-- Replace this!
 
   let messages = JSON.parse(localStorage.getItem("chatHistory")) || [
     { text: "Hello! I'm your AI health assistant. How can I help you today?", sender: "bot" }
@@ -189,3 +188,4 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 </body>
 </html>
+
