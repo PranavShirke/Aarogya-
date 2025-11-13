@@ -1,5 +1,4 @@
-AarogyaBackend
-Backend API service for the “Aarogya” health-oriented project by Pranav Shirke, designed to support health data management, user authentication, and service-oriented endpoints.
+Aarogya web application identifies possible health conditions based on user-input symptoms, tracking their history over time for better analysis and personalized insights. The platform also offers doctor recommendations, emergency alerts, medication suggestions, and multilingual support to provide comprehensive health assistance
 
 🌟 Features
 RESTful API/Firebase endpoints for user registration, login and profile management
